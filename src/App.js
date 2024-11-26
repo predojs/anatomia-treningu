@@ -1,5 +1,12 @@
 import React from "react";
+import IntroductionView from "./views/IntroductionView/IntroductionView";
+import Header from "./components/Header/Header";
 
-const App = () => <h1 className="text-3xl font-bold">Anatomia treningu</h1>;
+const App = () => (
+  <>
+    <Header />
+    <IntroductionView />
+  </>
+);
 
 export default App;
