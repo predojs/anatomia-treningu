@@ -6,7 +6,7 @@ const Header = () => {
 
   return (
     <header className="flex flex-col md:flex-row sticky top-0 bg-white w-full justify-between items-center px-6 py-5">
-      <section className="flex items-center justify-between w-full">
+      <section className="flex items-center justify-between w-full md:w-auto">
         <h1 className="text-2xl font-bold">Anatomia treningu</h1>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -25,8 +25,8 @@ const Header = () => {
         </svg>
       </section>
 
-      <nav className={isMenuOpen ? "flex" : "hidden md:flex"}>
-        <ul className="flex flex-col md:flex-row text-xl items-center py-5 md:pb-0 gap-5 right-1/2 md:relative w-full md:w-auto bg-white">
+      <nav className={isMenuOpen ? "flex " : "hidden md:flex"}>
+        <ul className="flex flex-col md:flex-row text-xl items-center py-5 gap-5 md:relative bg-white">
           <li className="font-medium hover:cursor-pointer">Home</li>
           <li className="font-medium hover:cursor-pointer">Treningi</li>
           <li className="font-medium hover:cursor-pointer">O nas</li>
