@@ -12,9 +12,9 @@ const Header = () => {
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
-          strokeWidth={1.5}
+          strokeWidth={2.5}
           stroke="currentColor"
-          className="size-5 md:hidden hover:cursor-pointer"
+          className="size-10 md:hidden hover:cursor-pointer"
           onClick={() => setIsMenuOpen((prev) => !prev)}
         >
           <path
@@ -26,7 +26,7 @@ const Header = () => {
       </section>
 
       <nav className={isMenuOpen ? "flex " : "hidden md:flex"}>
-        <ul className="flex flex-col md:flex-row text-xl items-center py-5 gap-5 md:relative bg-white">
+        <ul className="flex flex-col w-full md:flex-row text-xl items-center fixed left-0 py-8 gap-5 md:relative bg-white">
           <li className="font-medium hover:cursor-pointer">Home</li>
           <li className="font-medium hover:cursor-pointer">Treningi</li>
           <li className="font-medium hover:cursor-pointer">O nas</li>
